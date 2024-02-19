@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.jc.jcsports.model.Member" />
+
+        <import type="java.util.List" />
+
+        <variable
+            name="memberList"
+            type="List&lt;Member&gt;" />
+
+        <variable
+            name="index"
+            type="java.lang.Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <TextView
+            android:id="@+id/confirmedListCount"
+            style="@style/WaitListTextStyle"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center"
+            android:text="@{String.valueOf(index+1)}"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/confirmedList_1"
+            style="@style/WaitListTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@{memberList.get(0).name == null ? `미정` :memberList.get(0).name }"
+            android:textColor="@{memberList.get(0).gender == null ? @color/black : memberList.get(0).gender.equals(`M`) ? @color/black : @color/pink}"
+            tools:text="@string/notConfirm" />
+
+
+        <TextView
+            android:id="@+id/confirmedList_2"
+            style="@style/WaitListTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@{memberList.get(1).name == null ? `미정` :memberList.get(1).name }"
+            android:textColor="@{memberList.get(1).gender == null ? @color/black : memberList.get(1).gender.equals(`M`) ? @color/black : @color/pink}"
+            tools:text="@string/notConfirm" />
+
+
+        <TextView
+            android:id="@+id/confirmedList_3"
+            style="@style/WaitListTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@{memberList.get(2).name == null ? `미정` :memberList.get(2).name }"
+            android:textColor="@{memberList.get(2).gender == null ? @color/black : memberList.get(2).gender.equals(`M`) ? @color/black : @color/pink}"
+            tools:text="@string/notConfirm" />
+
+        <TextView
+            android:id="@+id/confirmedList_4"
+            style="@style/WaitListTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@{memberList.get(3).name == null ? `미정` :memberList.get(3).name }"
+            android:textColor="@{memberList.get(3).gender == null ? @color/black : memberList.get(3).gender.equals(`M`) ? @color/black : @color/pink}"
+            tools:text="@string/notConfirm" />
+
+
+    </LinearLayout>
+</layout>

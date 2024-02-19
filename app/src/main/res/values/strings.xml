@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Badminton</string>
+    <string name="attendance">출석체크</string>
+    <string name="confirm">확정</string>
+    <string name="notConfirm">미정</string>
+    <string name="close">닫기</string>
+    <string name="test">음성인식 테스트</string>
+    <string name="add">추가하기</string>
+    <string name="menu">메뉴</string>
+    <string name="waitList">참가자 리스트</string>
+    <string name="delete">삭제</string>
+    <string name="allDelete">전체삭제</string>
+    <string name="load">리스트 불러오기</string>
+    <string name="attendanceStatus">출석률</string>
+    <string name="join">회원 추가</string>
+    <string name="sortOfClub">소속 클럽</string>
+    <string name="deleteInfo">리스트를 명단에서 삭제하시겠습니까?</string>
+    <string name="next">다음</string>
+    <string name="insertNamePlaceHolder">이름을 입력해주세요.</string>
+    <string name="complete">완료</string>
+    <string name="choose">선택</string>
+    <string name="gender">성별</string>
+    <string name="man">남자</string>
+    <string name="woman">여자</string>
+
+    <string name="black">검은색</string>
+    <string name="red">빨간색</string>
+    <string name="orange">주황색</string>
+    <string name="yellow">노란색</string>
+    <string name="green">초록색</string>
+
+    <string name="menu_waitList">참가자 리스트 메뉴</string>
+    <string name="hide">숨기기</string>
+
+    <string name="chooseColor">색깔 선택</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

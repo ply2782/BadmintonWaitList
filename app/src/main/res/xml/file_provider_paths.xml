@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-media-path
+        name="DCIM"
+        path="." />
+    <external-media-path
+        name="Movies"
+        path="." />
+    <external-path
+        name="external-storage"
+        path="." />
+    <external-files-path
+        name="external-files"
+        path="." /> <!--  Context.getExternalFilesDir() 외부 저장소-->
+    <external-path
+        name="storage"
+        path="." />
+    <external-path
+        name="emulated"
+        path="." />
+    <external-path
+        name="0"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." /> <!--Context.getCacheDir() 내부 저장소-->
+    <external-cache-path
+        name="external-cache"
+        path="." /> <!--  Context.getExternalCacheDir() 외부 저장소-->
+</paths>

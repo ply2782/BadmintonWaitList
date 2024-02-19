@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.jc.jcsports.model.Member" />
+
+        <import type="com.jc.jcsports.model.Member.CurrentStatus" />
+
+        <variable
+            name="member"
+            type="Member" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/nameBtn_1"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_30"
+            android:backgroundTint="@{member.color.colorInt}"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp_30"
+            android:text="@{member.name}"
+            android:textColor="@{member.color.label.equals(`BLACK`) || member.color.label.equals(`RED`) || member.color.label.equals(`ORANGE`) ? @color/white : @color/black}"
+            android:textSize="@dimen/sp_30"
+            android:textStyle="bold"
+            android:theme="@style/Widget.AppCompat.Button.Colored"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="이름1" />
+
+        <TextView
+            android:id="@+id/checkTv_1"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@{member.currentStatus == CurrentStatus.IN ? `출석체크 완료` : ``}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameBtn_1"
+            tools:text="@string/attendance" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

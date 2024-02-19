@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/colorRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:context=".fragments.Join_4">
+
+            <RadioButton
+                android:id="@+id/blackRB"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:text="@string/black"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/redRB"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:text="@string/red"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/orangeRB"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:text="@string/orange"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/yellowRB"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:text="@string/yellow"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/greenRB"
+                style="@style/CommonTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:button="@null"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:text="@string/green"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio_text" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</layout>
