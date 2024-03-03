@@ -12,5 +12,6 @@ crashLytics 도 연동되어 있어 만약 앱이 ANR이 발생한다면 원인�
 
 ![Screenshot_20240303_231007_Badminton](https://github.com/ply2782/BadmintonWaitList/assets/78065931/562f2b4f-6d5d-4d69-8120-da4d93ec366a)
 
-![Screenshot_20240303_231210_Badminton](https://github.com/ply2782/BadmintonWaitList/assets/78065931/7d46bbd0-0046-4cfb-84f3-bb54853e599a)
+![Screenshot_20240303_231210_Badminton](https://github.com/ply2782/BadmintonWaitList/assets/78065931/c81a283b-3c49-414f-972c-289488b23242)
+
 
